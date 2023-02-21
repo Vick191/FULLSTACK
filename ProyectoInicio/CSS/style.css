@@ -1,0 +1,224 @@
+:root {
+    --rosatcd: #f76666;
+    --negrotcd: #020502;
+    --blancotcd: #ffffff;
+    --fuentetcd: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+/* Esto hace que 1rem =10px, si no, seria 1rem=16px */
+
+/* con esto hemos establecido que: 1 rem = 10px para facilitar el uso de rem.
+Esto hay que ponerlo siempre !!!!*/
+
+/*h2 {
+    color: red;
+    text-align: center;
+    background-color: #f76666;
+    text-transform: uppercase;
+    margin: 200px 200px 0px 0px;
+    /* margin-top: 200px; tambien es valido de esta manera
+ /* margin-right: 200px; */
+/* padding: 500px 0px 500px 0px; */
+
+
+
+/* Font-family: Fuente del texto */
+/* Font-size: tamaño de la fuente */
+/* Border: define el borde de un elemento */
+/* max-width: ancho maximo de un elemento */
+/* max-height: alto maximo de un elemento} */
+
+/* UNIDADES DE MEDIDA
+rem: relativo al documento. Es el más utilizado 1rem=16px.
+ px: da un valor de medida fija.
+ */
+
+/* Selector de clase:
+ Una clase se puede crear multiples veces (es reutilizable) e inicia con un punto  .
+ Ej:  .cliente{}
+ 
+ Selector de ID
+ Puedes tener multiples ID por pagina pero sus nombres no pueden repetirse. ID tiene prioridad. El ID con un nombre solo se puede
+ usar una vez por página.
+ Ej:  #cliente {}
+ 
+ Selector de atributo: 
+ Selecciona elementos basados en algun atributo que tenga.
+ 
+ Combinacion de descendentes:Selecciona los elementos hijos cuyo padre sea una clase (o ID) en especifico
+ Ej: .cliente .nombre {}
+ 
+ Todos los hijos: Aplica la siguiente regla a todos los parrafos hijos
+ Ej: .cliente  p{}*/
+
+/* Si queremos aplicar a varias se separan con , */
+
+/* .Mando p{
+    text-transform: uppercase;
+}   */
+
+/* Especificidad en CSS
+Es como el navegador va a interpretar mi codigo.
+Etiqueta !important tiene prioridad absoluta
+
+COLORES:
+transparencias rgba
+
+Variables en css. Ejemplo menus hamburguesa 337
+
+NORMALICE:
+
+*/
+
+.Prueba1 a,
+span {
+    color: var(--rosatcd);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.displayflex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.textoderecha {
+    text-align: right;
+}
+
+.banner {
+    background-image: url(../img/banner.png);
+
+}
+
+.zona-centro {
+    font-weight: 800;
+    font-size: 47px;
+    margin-bottom: 10px;
+    padding: 35px;
+    color: var(--blancotcd);
+    text-align: left;
+    background: rgba(402, 102, 102, 0.65)
+}
+
+.precta {
+    display: block;
+    float: left;
+
+}
+
+.logos-oficiales {
+    max-width: 100%;
+    height: auto;
+}
+
+.cursos {
+    color: var(--rosatcd);
+    font-size: 17px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*  */
+
+.contenedor {
+
+    width: 114rem;
+    /*definimos el ancho del contenedor  */
+    margin-top: 0;
+    margin-right: auto;
+    /*Esto sirve para centrar el el contenido y dejar espacio a los lados*/
+    margin-bottom: 0;
+    /*tambien se puede poner como margin:0 auto 0 auto o margin: 0 auto*/
+    margin-left: auto;
+}
+
+.centrar-mayus {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.localizaciones {
+    background-color: var(--negrotcd);
+    color: var(--blancotcd);
+}
+
+.marketing {
+    background-image: url(../img/Curso-marketing-digital-centro.png);
+}
+
+.progvideojuegos {
+    background-image: url(../img/Curso-programacion-videojuegos-centro.png);
+}
+
+.fullstack {
+    background-image: url(../img/Curso-programacion-web-full-stack-centro.png);
+}
+
+
+/* crear 4 `parrafos y cambiar la naturaleza
+1 enseñar los 4 parrafos y luego cambiando la naturaleza. al cuarto le ponemos color */
+
+.inline {
+    display: inline;
+}
+
+/*.parrafo1 {
+    background-color: blue;
+}
+
+.parrafo2 {
+    background-color: red;
+}
+
+.parrafo3 {
+    background-color: green;
+}
+
+.parrafo4 {
+    background-color: yellow;
+}
+
+.navmargin {
+    background-color: var(--rosatcd);
+    margin: 30px 0px 30px 0px;
+}
+
+.navpadding {
+    background-color: var(--rosatcd);
+    padding: 30px 0px 30px 0px;
+} */
+
+.navprincipal {
+    padding: 15px 0px 10px 0px;
+}
+
+/* contenido casa padding patio margin calle */
+
+a {
+    text-decoration: none;
+}
+
+.colxl-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.colxl-4 {
+    flex: 33.3%;
+    max-width: 33.3%;
+}
+
+.colxl-8 {
+    flex: 66.6%;
+    max-width: 66.6%;
+}
