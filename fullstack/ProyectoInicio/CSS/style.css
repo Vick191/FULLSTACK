@@ -1,0 +1,742 @@
+:root {
+    --rosatcd: #f76666;
+    --negrotcd: #020502;
+    --blancotcd: #ffffff;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Open sans", sans-serif;
+    font-weight: 400;
+    margin: 0px;
+
+    /* para añadir degradados al body */
+    /* background-image: linear-gradient(to top, red 20%, yellow 80%); */
+
+}
+
+/* Esto hace que 1rem =10px, si no, seria 1rem=16px */
+
+/* con esto hemos establecido que: 1 rem = 10px para facilitar el uso de rem.
+Esto hay que ponerlo siempre !!!!*/
+
+/*h2 {
+    color: red;
+    text-align: center;
+    background-color: #f76666;
+    text-transform: uppercase;
+    margin: 200px 200px 0px 0px;
+    /* margin-top: 200px; tambien es valido de esta manera
+ /* margin-right: 200px; */
+/* padding: 500px 0px 500px 0px; */
+
+
+
+/* Font-family: Fuente del texto */
+/* Font-size: tamaño de la fuente */
+/* Border: define el borde de un elemento */
+/* max-width: ancho maximo de un elemento */
+/* max-height: alto maximo de un elemento} */
+
+/* UNIDADES DE MEDIDA
+rem: relativo al documento. Es el más utilizado 1rem=16px.
+ px: da un valor de medida fija.
+ */
+
+/* Selector de clase:
+ Una clase se puede crear multiples veces (es reutilizable) e inicia con un punto  .
+ Ej:  .cliente{}
+ 
+ Selector de ID
+ Puedes tener multiples ID por pagina pero sus nombres no pueden repetirse. ID tiene prioridad. El ID con un nombre solo se puede
+ usar una vez por página.
+ Ej:  #cliente {}
+ 
+ Selector de atributo: 
+ Selecciona elementos basados en algun atributo que tenga.
+ 
+ Combinacion de descendentes:Selecciona los elementos hijos cuyo padre sea una clase (o ID) en especifico
+ Ej: .cliente .nombre {}
+ 
+ Todos los hijos: Aplica la siguiente regla a todos los parrafos hijos
+ Ej: .cliente  p{}*/
+
+/* Si queremos aplicar a varias se separan con , */
+
+/* .Mando p{
+    text-transform: uppercase;
+}   */
+
+/* Especificidad en CSS
+Es como el navegador va a interpretar mi codigo.
+Etiqueta !important tiene prioridad absoluta
+
+COLORES:
+transparencias rgba
+
+Variables en css. Ejemplo menus hamburguesa 337
+
+NORMALICE:
+
+*/
+
+/* .Prueba1 a, 
+span {
+    color: var(--rosatcd);
+    font-size: 14px;
+    font-weight: 700;
+} */
+
+.imagenbanner {
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    /*hace que la imagen se ajuste al contenedor*/
+    background-repeat: no-repeat;
+    /*hace que la imagen no se repita*/
+    padding-top: 80px;
+    padding-bottom: 240px;
+
+}
+
+.zona-centro {
+    text-align: left;
+}
+
+
+/* crear 4 `parrafos y cambiar la naturaleza
+1 enseñar los 4 parrafos y luego cambiando la naturaleza. al cuarto le ponemos color */
+
+/*.parrafo1 {
+    background-color: blue;
+}
+
+.parrafo2 {
+    background-color: red;
+}
+
+.parrafo3 {
+    background-color: green;
+}
+
+.parrafo4 {
+    background-color: yellow;
+}
+
+.navmargin {
+    background-color: var(--rosatcd);
+    margin: 30px 0px 30px 0px;
+}
+
+.navpadding {
+    background-color: var(--rosatcd);
+    padding: 30px 0px 30px 0px;
+} */
+
+
+
+/* contenido casa padding patio margin calle */
+.contenedor {
+
+    width: 90%;
+    /*definimos el ancho del contenedor  */
+    margin-top: 0;
+    margin-right: auto;
+    /*Esto sirve para centrar el el contenido y dejar espacio a los lados*/
+    margin-bottom: 0;
+    /*tambien se puede poner como margin:0 auto 0 auto o margin: 0 auto*/
+    margin-left: auto;
+}
+
+.navprincipal {
+    padding: 15px 0px 10px 0px;
+}
+
+.displayflex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navcursos a {
+    text-decoration: none;
+}
+
+.login a {
+    text-decoration: none;
+}
+
+
+.subrayado a:hover {
+    text-decoration: underline;
+}
+
+.login a {
+    color: var(--rosatcd);
+
+}
+
+.raya {
+    color: var(--rosatcd);
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.imagenlogo {
+    padding: 17px px 0px 0px;
+}
+
+.navcursos {
+    padding: 0px 0px 0px 0px;
+    margin-top: 2.4rem;
+    align-items: center;
+}
+
+.navcursos a {
+    font-size: 1.5rem;
+
+}
+
+.margend25 {
+    margin-right: 25px;
+    font-weight: 700;
+    color: var(--negrotcd);
+}
+
+.informate {
+    background-color: var(--rosatcd);
+    font-weight: 700;
+    color: var(--blancotcd);
+    border-radius: 20px;
+    padding: 8px 12px;
+}
+
+.informate:hover {
+    background-color: #117a8b;
+    text-decoration: none !important;
+
+}
+
+.inline {
+    display: inline;
+}
+
+@media (min-width:768px)
+
+/*para tablet, pc y mas*/
+    {
+    .colxl-12 {
+        flex: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .colxl-4 {
+        flex: 33.3%;
+        max-width: 33.3%;
+    }
+
+    .colxl-8 {
+        flex: 66.6%;
+        max-width: 66.6%;
+        display: flex;
+        justify-content: end;
+    }
+
+}
+
+@media (max-width:767px)
+
+/*para dispositivos movil*/
+    {
+    .colsm-12 {
+        flex: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+
+}
+
+.TextosZonaCentro {
+    width: 65%;
+}
+
+.TextosZonaCentro h1 {
+    font-weight: 800;
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    padding: 35px;
+    color: var(--blancotcd);
+    background: rgba(402, 102, 102, 0.65);
+    /* box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 0.75); 
+    para poner sombreado*/
+}
+
+/* h1::after {
+    /*añade contenido desde css para que no se pueda copiar, after despues del texto
+    before lo pone antes.*/
+/* content: 'texto desde CSS'; 
+} */
+
+/* .ejerciciopadre {
+    background-color: red;
+    width: 500px;
+    height: 200px;
+    position: relative;
+}
+
+.ejerciciohijo {
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    bottom: 80px;
+    left: 80px;
+} */
+
+h1 {
+    line-height: 1.2;
+}
+
+
+.textoszonacentro .precta {
+    display: block;
+    float: left;
+
+}
+
+.TextosZonaCentro .cta {
+    color: #fff;
+    border: 2px solid #000;
+    background: #000 url(../img/ico-flecha-derecha-white.png) no-repeat right 20px center;
+    border-radius: 0%;
+    float: right;
+    font-family: "DinBold", sans-serif;
+    min-height: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 24px 94px;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.TextosZonaCentro .cta:hover {
+    color: var(--Rosita);
+    background: white url(../img/ico-flecha-derecha-red.png) no-repeat right 20px center;
+    border: 2px solid var(--rosatcd)
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*seccion de logos oficiales*/
+
+.seccion-logos {
+    margin-top: -120px;
+}
+
+.engrama {
+    background-color: var(--blancotcd);
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    gap: 30px;
+    border-radius: 12px;
+}
+
+.empresas {
+    padding: 30px 25px;
+    margin-left: 135px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.adecco {
+    text-align: center;
+    padding: 60px 30px 60px 82px;
+}
+
+/*Botones Cambia tu futuro*/
+
+
+.infocursos h3 {
+    color: var(--rosatcd);
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+
+}
+
+.infocursos h2 {
+    color: var(--negrotcd);
+    font-size: 27px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 72px;
+    text-transform: uppercase;
+}
+
+.cambia-futuro {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.botonescursos {
+    display: flex;
+    justify-content: center;
+
+}
+
+.botonescursos a {
+    color: var(--negrotcd);
+    background-color: var(--blancotcd);
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 85px;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    border: 1px solid var(--rosatcd);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+
+/* seccion cursos de la zona centro  */
+
+.imagenescursos {
+    display: grid;
+    /* grid-template-columns: 50% 50%;
+    grid-template-rows: 300px 300px; */
+    grid: 300px 300px / 555px 555px;
+    /*Primero filas / luego columnas; Tambien se puede en fracciones*/
+    gap: 30px 30px;
+    /*para delimitar el espacio entre imagenes*/
+    /* column-gap: 30px;
+    row-gap: 30px; */
+    margin-left: 5%;
+    margin-right: 5%;
+    text-transform: uppercase;
+
+}
+
+.marketing {
+    background-image: url(../img/Curso-marketing-digital-centro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.progvideojuegos {
+    background-image: url(../img/Curso-programacion-videojuegos-centro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fullstack {
+    background-image: url(../img/Curso-programacion-web-full-stack-centro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imagenescursos div {
+    padding: 30px 50px;
+    position: relative;
+}
+
+.imagenescursos div a {
+    position: absolute;
+    bottom: 50px;
+}
+
+.imagenescursos div h2 {
+    color: white;
+}
+
+.botoncursos {
+    background-color: var(--blancotcd);
+    font-weight: 700;
+    color: var(--rosatcd);
+    padding: 20px 44px;
+    font: 14px "DinBold", sans-serif;
+    font-weight: bold;
+    border: 2px solid var(--blancotcd);
+    text-decoration: none;
+}
+
+
+.imagenescursos div h2 {
+    font: 27px 'Open-Sans', sans-serif;
+    font-weight: bold;
+}
+
+.botoncursos:hover {
+    background-color: var(--rosatcd);
+    color: var(--blancotcd);
+}
+
+/*Te interesa? Pidenoslo*/
+
+.fuenteStrong {
+    font-size: 17px;
+}
+
+.botonPidenos {
+    color: var(--blancotcd);
+    background-color: var(--rosatcd);
+    font-weight: 700;
+    float: none;
+    padding: 24px 36px;
+    border-radius: 96px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover.botonPidenos {
+    color: var(--blancotcd);
+    background-color: var(--negrotcd);
+    text-decoration: underline;
+}
+
+.fila h3 {
+    margin-bottom: 70px;
+}
+
+.fila {
+    text-align: center;
+    margin: 105px 0px 170px;
+}
+
+strong b {
+    font-weight: bold;
+    color: var(--negrotcd);
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+
+/*Seccion Para quien son Estos cursos*/
+
+.gridTexto {
+    display: grid;
+    grid-template-columns: 0% 50% 50%;
+
+}
+
+.padmar {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.padmar h3 b {
+    color: var(--rosatcd);
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+}
+
+.padmar h2 {
+    font-size: 27px;
+    margin-bottom: 22px;
+    font-weight: 800;
+
+}
+
+.participar {
+    color: var(--negrotcd);
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.botonweb {
+    color: var(--rosatcd);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    display: block;
+    text-transform: uppercase;
+
+}
+
+.descargarInfo {
+    font-size: 14px;
+    margin-bottom: 45px;
+
+}
+
+.botonInfo {
+    font-family: "DinBold", sans-serif;
+    float: none;
+    font-weight: 700;
+    background: var(--rosatcd);
+    padding: 20px 40px;
+    color: var(--blancotcd);
+    border-color: var(--blancotcd);
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.botonInfo:hover {
+    color: var(--rosatcd);
+    background-color: var(--blancotcd);
+    border: 2px solid var(--rosatcd);
+}
+
+
+
+
+
+
+
+
+/*Localizaciones*/
+
+.localizaciones {
+    background-color: var(--negrotcd);
+    color: var(--blancotcd);
+    padding: 90px;
+    text-transform: uppercase;
+}
+
+.gridLocalizaciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+
+}
+
+.localizaciones h2 {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 50px;
+
+}
+
+.localizaciones div h3 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.localizaciones div p {
+    font-size: 14px;
+}
+
+/*Seccion de video*/
+
+.video {
+    width: 95%;
+    height: 600px;
+}
+
+.contenVideo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+/*Sección de contactar*/
+
+.contacto {
+    background-color: var(--rosatcd);
+    color: var(--blancotcd);
+    height: auto;
+    margin: 0;
+    padding: 80px 0;
+    font-family: var(--font-family-sans-serif);
+}
+
+
+.contacto h2 {
+    color: var(--blancotcd);
+    font-size: 27px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.contacto h3 {
+    color: var(--blancotcd);
+    font-size: 17px;
+    font-weight: 200;
+    margin-bottom: 22px;
+}
+
+.titulos-contacto {
+    text-transform: uppercase;
+}
+
+.cajas-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+.img-contacto img {
+    height: 60px;
+    width: 60px;
+}
+
+.div-contacto {
+    align-items: center;
+    background-color: var(--blancotcd);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 30px 40px;
+}
+
+.texto-contacto p {
+    margin: 0px 0px 10px 0px;
+    color: var(--negrotcd);
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.texto-contacto a {
+    margin: 0;
+    text-decoration: none;
+    color: var(--rosatcd);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/*Footer*/
+
+.fondo {
+    background-color: #f3f3f5;
+    border-top: 1px solid var(--blancotcd);
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.cursosZona {
+    font-size: 17px;
+    padding: 0 15px;
+    margin: 0 0 22px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
